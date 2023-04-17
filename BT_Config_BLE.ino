@@ -7,9 +7,10 @@ char c = ' ';
 boolean NL = true;
 
 void setup() {
-  Serial.begin(38400);
+  //NOTE: To get 4-pin HM-10 into command mode you have to set Serial to 9600
+  Serial.begin(9600); // 38400
   Serial.println("Enter AT commands:");
-  BT_Serial.begin(38400);
+  BT_Serial.begin(9600); // 38400
   
 }
 
